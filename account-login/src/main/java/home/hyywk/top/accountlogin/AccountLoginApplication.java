@@ -10,12 +10,6 @@ public class AccountLoginApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AccountLoginApplication.class, args);
-
-
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        context.start();
-        AccountDomainApi accountDomainApi = (AccountDomainApi) context.getBean("accountDomainApi");
-        System.out.println( accountDomainApi.selectById(1l) );
     }
 
 }
