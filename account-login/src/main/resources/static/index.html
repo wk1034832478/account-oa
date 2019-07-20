@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script type="text/javascript" src="https://appx/web-view.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        if (navigator.userAgent.toLowerCase().indexOf('dingtalk') > -1) {
+            document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+        }
+        // javascript
+        dd.navigateTo({url: '/Pages/home/index'});
+
+        // 网页向小程序 postMessage 消息
+        dd.postMessage({name:"测试web-view"});
+
+        // 接收来自小程序的消息。
+        dd.onMessage = function(e) {
+            console.log(e); //{'sendToWebView': '1'}
+        }
+
+    </script>
+</body>
+</html>
