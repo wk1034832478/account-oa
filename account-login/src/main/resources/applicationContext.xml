@@ -7,5 +7,5 @@
 
     <dubbo:application name="demo-consumer"/>
     <dubbo:registry group="aaa" address="zookeeper://127.0.0.1:2181"/>
-    <dubbo:reference id="accountDomainApi" check="true" interface="home.hyywk.top.api.AccountDomainApi"/>
+    <dubbo:reference id="accountDomainApi" check="true" interface="home.hyywk.top.api.AccountDoApi"/>
 </beans>

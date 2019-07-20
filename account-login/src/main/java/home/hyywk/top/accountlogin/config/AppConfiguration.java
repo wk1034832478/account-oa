@@ -1,7 +1,7 @@
 package home.hyywk.top.accountlogin.config;
 
-import home.hyywk.top.api.AccountDomainApi;
-import org.springframework.beans.factory.annotation.Autowired;
+import home.hyywk.top.api.AccountDoApi;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -11,4 +11,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfiguration {
 
+    private AccountDoApi accountDomainApi;
+
+    public AppConfiguration() {}
+
+    @Reference
+    public void setAccountDomainApi(AccountDoApi accountDomainApi) {
+        System.out.println( accountDomainApi );
+        this.accountDomainApi = accountDomainApi;
+    }
 }

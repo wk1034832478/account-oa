@@ -14,11 +14,6 @@ public class AccountMyDubboProviderApplication {
     public static void main(String[] args) throws Exception{
          SpringApplication.run(AccountMyDubboProviderApplication.class, args);
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        context.start();
-
-        System.out.println("dubbo service started");
-        new CountDownLatch(1).await();
     }
 
 }

@@ -18,8 +18,6 @@ public class AccountDubboApplicationTests {
         logger.debug("测试");
         logger.info("测试");
         logger.warn("测试");
-
-
     }
 
 }
