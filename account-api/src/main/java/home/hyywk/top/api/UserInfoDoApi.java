@@ -2,7 +2,6 @@ package home.hyywk.top.api;
 
 import home.hyywk.top.entity.UserInfoDo;
 
-import java.io.Serializable;
 
 /**
  * @author 王凯
