@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
+    <meta charset="utf-8" />
+    <meta name="authors" content="王凯">
+    <link href="/css/public.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="https://appx/web-view.min.js"></script>
 </head>
 <body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>用户登录</legend>
+                <div>
+                    <input type="text" name="username" id="username" />
+                </div>
+                <div>
+                    <input type="text" name="password" id="password" />
+                </div>
+                <div>
+                    <button id="submit">提交</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
     <script type="text/javascript" charset="utf-8">
         // 在钉钉环境下导入该部分代码
         if (navigator.userAgent.toLowerCase().indexOf('dingtalk') > -1) {
